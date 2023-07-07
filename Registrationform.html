@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<body style="background-color:Tan;">
 <head>
 <title>Registration Form</title>
 </head>
@@ -20,60 +21,57 @@
 </tr>
 </nav>
 </table>
-<h1 align=center>Registration Form for SHS</h1>
+<h1 align=left>Registration Form for SHS</h1>
 <form name=Registration>
   <table>
 <tr>
 <td>First name:</td>
-<td><input name=Firstname size=30> Last name:<input name=Lastname size=30></td>
+<td><input type="text" input name="Firstname" placeholder="Enter First Name" size=30> 
+  Last Name:
+  <input type="text" input name="Last name" placeholder="Enter Last Name" size=30></td>
 </tr>
     
 <tr>
 <td>Email Adress:</td>
-<td><input name=EmailAdress size=70></td>
+<td><input type="text" input name="EmailAdress" placeholder="Enter Email Adress" size="30"</td>
 </tr>
     
 <tr>
 <td>Date:</td>
-<td><input name=Date size=30></td>
+<td><input type="date" input name=Date size=30></td>
 </tr>
 
 <tr>
 <td>Cellphone Number:</td>
-<td><input name=CellphoneNumber size=100></td>
+<td><input type="text" input name="CellphoneNumber" placeholder="Enter cellphone number" size=30></td>
 </tr>
     
 <tr>
 <td>Gender:</td>
-<td><select name=gender>
-<option>Male
-<option>Female
+<td>
+  <input type="Radio" input name="gender" value="Female">
+  "Female"
+  <input type="Radio" input name="gender" value="Male">
+  "Male"
+  </td>
+</tr>
+
+<tr>
+<td>Birthday:</td>
+  <td input type="date" input name="birthday" id="birthday"></td>
+</tr>
+
+<tr>
+  <td>Martial Status:</td>
+  <td><select name="marital_status" id="marital_status">
+     <option value="">-Select Marital Status-</option>
+    <option value="Single">Single</option>
+    <option value="Married">Married</option>
+    <option value="Widowed">Widowed</option>
+    <option value="Separated">Separated</option>
+    <option value="Divorced">Divorced</option>
 </select>
-</option>
-</tr>
-
-<tr>
-<td>BirthMonth:</td>
- <td><select name=birthmonth>
-<option>January
-<option>February
-<option>March
-<option>April
-<option>May
-<option>June
-<option>July
-<option>August
-<option>September
-<option>October
-<option>November
-<option>December
-  </select>
-  </option>
-</tr>
-
-<tr>
-<td>Status:</td>
- <td><input name=Status size=30></td>
+  </td>
 </tr>
 
 <tr>
@@ -91,12 +89,13 @@
 <option>29 Year Old
 <option>30 Year Old
 </select>
+  </td>
 </option>
 
 
 <tr>
 <td>Password:</td>
-<td><input name=Password size=100></td>
+<td><input type="password" input name=Password size="30" placeholder="Enter Password"></td>
 </tr>
 </table>
 </table>
