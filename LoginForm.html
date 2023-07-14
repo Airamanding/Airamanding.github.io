@@ -2,13 +2,15 @@
 <body style="background-color:Khaki;">
 <head>
 <title>Log-in Form</title>
-</head>
+
 <body>
 <header>
  <a href="loginform.html">
 <img src="logopng.png" alt="KCM ACADEMY" title="Senior High School Life">
 </a>
-</header> 
+</header>
+</tr>
+</table>
 <hr>
 <nav> 
 <table cellspacing="10" cellpadding="10">
@@ -25,15 +27,46 @@
 <h1 align=left>Login Form</h1>
 <form name=Loginform>
  <table>
-<td>Email Adress:</td>
-<td><input type="text" input name="Email Address" placeholder="Enter Email Address" size="30"></td>
+<head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+  $("#EmailButton").click(function(){
+    var email = $("#email").val() 
+	alert(email);
+  });
+  
+  $("#PasswordButton").click(function(){
+    var password = $("#password").val() 
+	alert(password);
+  });
+});
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+Email address:
+	<input type="text" input name="Email Address" placeholder="Email Address" id="email" size="25">
+</td>
+<td>
+	<button type="button" id="EmailButton">Enter</button>
 </tr>
-<td>Password:</td>
-<td><input type="Password" input name="Password" placeholder="Enter Password" size="30"></td>
-</tr>
+
+<tr>
+<td>
+Password:
+	<input type="text" input name="Password" placeholder="Password" id="password" size="30">
+</td>
+<td>
+	<button type="button" id="PasswordButton">Enter</button>
+</td>
 </table>
 
- <hr>
+<hr>
  <h2>STRAND</h2>
  <table>
   <tr>
@@ -46,7 +79,7 @@
    </tr>
  </table>
 
- <hr>
+<hr>
  <h2>REQUIREMENTS</h2>
  <table>
   <tr>
@@ -60,22 +93,5 @@
   </tr>
  </table>
 
- <hr>
- <table>
-  <tr>
-   <td valign=top>Comment?</td>
-   <td>
-    <textarea rows=3 cols=50 name=comment> Enter Comment Here</textarea> 
-   </td>
-  </tr>
- </table>
-
- <hr>
- <left>
-  <input type=submit value="Send Registration">
-  <input type=reset value="Cancel">
- </left>
-</form>
 </body>
 </html>
-
